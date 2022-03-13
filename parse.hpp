@@ -1,6 +1,5 @@
-#include<vector>
-#include<ranges>
 #include<iostream>
+#include<string>
 
 namespace cmd
 {
@@ -17,7 +16,7 @@ namespace cmd
 
 		for (int i = 1; i < argc; i++)
 		{
-			if (option._Equal(argv[i])) {
+			if(!option.compare(argv[i])){ //if (option._Equal(argv[i])) { 
 
 				if (argc <= (i + 1)) help();
 				return argv[i + 1];
