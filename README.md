@@ -1,5 +1,11 @@
 # cmdline-parser
 
-easiest to use, but no parameter checking
+```xxx.exe -bin 123
+```
 
-need c++ 20
+```cout << cmd::parse(argc,argv,"-bin");    ->  123
+```
+
+
+
+
