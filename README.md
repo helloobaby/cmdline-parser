@@ -1,13 +1,12 @@
 # cmdline-parser
 
-```
-xxx.exe -bin 123
+``` Usage:
+root@VM-4-17-ubuntu:~# ./a.out -bin  
+-help to get usage
 
-```
-
-```
-cout << cmd::parse(argc,argv,"-bin");    ->  123
-
+root@VM-4-17-ubuntu:~# ./a.out -bin   123
+123 root@VM-4-17-ubuntu:~# ./a.out -bin   abc
+abc root@VM-4-17-ubuntu:~# 
 ```
 
 
